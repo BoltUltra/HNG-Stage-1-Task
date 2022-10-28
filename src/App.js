@@ -1,11 +1,10 @@
 import React from "react";
+import { Linktree } from "./components";
 
 const App = () => {
   return (
-    <div>
-      <p className="text-3xl font-bold capitalize">
-        This is react starter with tailwind
-      </p>
+    <div className="flex justify-center md:mx-44 mx-10 font-inter h-screen py-10">
+      <Linktree />
     </div>
   );
 };
