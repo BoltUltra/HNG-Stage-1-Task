@@ -3,7 +3,7 @@ import { Linktree } from "./components";
 
 const App = () => {
   return (
-    <div className="flex justify-center md:mx-44 mx-10 font-inter h-screen py-10">
+    <div className="flex justify-center md:mx-44 mx-5 font-inter py-10">
       <Linktree />
     </div>
   );
