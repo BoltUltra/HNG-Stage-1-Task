@@ -38,6 +38,7 @@ const links = () => {
         link_id="book__design"
         link_title="The HNG Design Rules Book gives you the tips & guidelines you need to create truly professional designs, by addressing errors that could you get you disqualified."
       />
+      <AnchorTag link="/contact" linkType="Contact" link_id="contact" />
     </div>
   );
 };

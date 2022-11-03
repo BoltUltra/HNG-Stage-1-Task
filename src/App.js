@@ -1,11 +1,15 @@
 import React from "react";
-import { Linktree } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Contact, Home } from "./components";
 
 const App = () => {
   return (
-    <div className="flex justify-center md:mx-44 mx-5 font-inter py-10">
-      <Linktree />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
