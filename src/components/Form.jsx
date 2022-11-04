@@ -13,6 +13,7 @@ const Form = () => {
             name="first_name"
             id="first_name"
             placeholder="Enter your first name"
+            required
           />
         </div>
         <div className="label">
@@ -25,6 +26,7 @@ const Form = () => {
             name="last_name"
             id="last_name"
             placeholder="Enter your last name"
+            required
           />
         </div>
       </div>
@@ -38,6 +40,7 @@ const Form = () => {
           name="email"
           id="email"
           placeholder="yourname@email.com"
+          required
         />
       </div>
       <div className="label">
@@ -51,6 +54,7 @@ const Form = () => {
           rows="5"
           className="input"
           placeholder="Send me a message and I'll reply you as soon as possible..."
+          required
         ></textarea>
       </div>
       <div className="flex items-start space-x-2 md:items-center pb-5">
