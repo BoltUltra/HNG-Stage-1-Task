@@ -1,4 +1,5 @@
 const Form = () => {
+  const name = "Mayowa Sunusi";
   return (
     <form className="py-10 space-y-4">
       <div className="grid md:grid-cols-2 md:gap-5 md:space-y-0 space-y-4">
@@ -55,7 +56,7 @@ const Form = () => {
       <div className="flex items-start space-x-2 md:items-center pb-5">
         <input type="checkbox" name="agree" id="agree" className="" required />
         <label htmlFor="agree" className="text-sm text-gray-600 cursor-pointer">
-          You agree to providing your data to Mayowa Sunusi who may contact you.
+          You agree to providing your data to {name} who may contact you.
         </label>
       </div>
       <button
