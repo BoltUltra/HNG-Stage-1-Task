@@ -5,7 +5,11 @@ const Success = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center">
       <div className="text-center space-y-5">
-        <img src="/check.png" alt="" className="w-[50%] mx-auto" />
+        <img
+          src="/check.png"
+          alt=""
+          className="w-[50%] mx-auto animate-pulse"
+        />
         <p>Form Submitted</p>
         <Link
           to="/"
