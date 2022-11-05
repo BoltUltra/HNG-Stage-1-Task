@@ -8,4 +8,4 @@ export { default as Contact } from "./Contact";
 export { default as Home } from "./Home";
 export { default as Heading } from "./Heading";
 export { default as LinktreeContact } from "./LinktreeContact";
-export { default as Form } from "./Form";
+export { default as ContactForm } from "./Form";
