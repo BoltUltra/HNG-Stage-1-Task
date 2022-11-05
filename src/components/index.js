@@ -9,3 +9,4 @@ export { default as Home } from "./Home";
 export { default as Heading } from "./Heading";
 export { default as LinktreeContact } from "./LinktreeContact";
 export { default as ContactForm } from "./Form";
+export { default as Success } from "./Success";

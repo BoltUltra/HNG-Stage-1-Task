@@ -37,7 +37,7 @@ const ContactForm = () => {
       validate={validateForm}
     >
       {(formik) => (
-        <form className="py-10 space-y-4">
+        <form className="py-10 space-y-4" action="/success">
           <div className="grid md:grid-cols-2 md:gap-5 md:space-y-0 space-y-4">
             <div className="label">
               <label htmlFor="first_name" className="text-sm">
@@ -53,6 +53,7 @@ const ContactForm = () => {
                 name="first_name"
                 id="first_name"
                 placeholder="Enter your first name"
+                required
               />
               {formik.touched.first_name && formik.errors.first_name ? (
                 <div className="input-invalid-text">
@@ -74,6 +75,7 @@ const ContactForm = () => {
                 name="last_name"
                 id="last_name"
                 placeholder="Enter your last name"
+                required
               />
               {formik.touched.last_name && formik.errors.last_name ? (
                 <div className="input-invalid-text">
@@ -96,6 +98,7 @@ const ContactForm = () => {
               name="email"
               id="email"
               placeholder="yourname@email.com"
+              required
             />
             {formik.touched.email && formik.errors.email ? (
               <div className="input-invalid-text">{formik.errors.email}</div>
@@ -117,6 +120,7 @@ const ContactForm = () => {
                   : "input"
               }
               placeholder="Send me a message and I'll reply you as soon as possible..."
+              required
             ></Field>
             {formik.touched.message && formik.errors.message ? (
               <div className="input-invalid-text">{formik.errors.message}</div>
